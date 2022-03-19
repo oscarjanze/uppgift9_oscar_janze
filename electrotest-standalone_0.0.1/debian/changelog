@@ -1,0 +1,6 @@
+electrotest-standalone (0.0.1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- oscar <jaanze@gmail.com>  Sat, 19 Mar 2022 01:04:21 +0100

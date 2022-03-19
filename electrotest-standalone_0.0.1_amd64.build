@@ -1,0 +1,179 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package electrotest-standalone
+dpkg-buildpackage: info: source version 0.0.1
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by oscar <jaanze@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean  
+   dh_auto_clean
+	make -j1 distclean
+make[1]: Entering directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+rm -f src/electrotest-standalone
+make[1]: Leaving directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+   dh_clean
+ dpkg-source -b .
+dpkg-source: warning: non-native package version does not contain a revision
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building electrotest-standalone using existing ./electrotest-standalone_0.0.1.orig.tar.gz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: warning: ignoring deletion of directory oscar
+dpkg-source: warning: ignoring deletion of directory oscar/Documents
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/control, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/watch, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/copyright, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/rules, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/compat, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/changelog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/README.Debian, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/source
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/source/format, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/patches
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/patches/series, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/patches/patch_number_one, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.quilt_patches, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.quilt_series, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.version, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/applied-patches, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one/src
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one/src/electrotest-standalone.c, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/src
+dpkg-source: warning: ignoring deletion of file oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/src/electrotest-standalone.c, use --include-removal to override
+dpkg-source: warning: newly created empty file 'LICENSE' will not be represented in diff
+dpkg-source: info: building electrotest-standalone in electrotest-standalone_0.0.1.debian.tar.xz
+dpkg-source: info: building electrotest-standalone in electrotest-standalone_0.0.1.dsc
+ debian/rules build
+dh build  
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j1 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+# CFLAGS=-g -O2 
+# -fdebug-prefix-map=/home/oscar/Documents/uppgift9_oscar_janze/main/ele
+# ctrotest-standalone_0.0.1=. -fstack-protector-strong -Wformat 
+# -Werror=format-security
+cc -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security  -o src/electrotest-standalone src/electrotest-standalone.c -lm
+src/electrotest-standalone.c: In function ‘main’:
+src/electrotest-standalone.c:24:4: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   24 |    scanf("%f", &voltage);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+src/electrotest-standalone.c:29:4: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   29 |    scanf(" %c", &connection);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/electrotest-standalone.c:32:4: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   32 |    scanf("%d", &comp);
+      |    ^~~~~~~~~~~~~~~~~~
+src/electrotest-standalone.c:40:7: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   40 |       scanf("%f", &array[i]);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+make[1]: Leaving directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary  
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+dh_auto_install -- prefix=/usr
+	make -j1 install DESTDIR=/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/electrotest-standalone AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true" prefix=/usr
+make[2]: Entering directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+install -D src/electrotest-standalone \
+			/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/electrotest-standalone/usr/bin/electrotest-standalone
+make[2]: Leaving directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+make[1]: Leaving directory '/home/oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'electrotest-standalone' in '../electrotest-standalone_0.0.1_amd64.deb'.
+dpkg-deb: building package 'electrotest-standalone-dbgsym' in 'debian/.debhelper/scratch-space/build-electrotest-standalone/electrotest-standalone-dbgsym_0.0.1_amd64.deb'.
+	Renaming electrotest-standalone-dbgsym_0.0.1_amd64.deb to electrotest-standalone-dbgsym_0.0.1_amd64.ddeb
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../electrotest-standalone_0.0.1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian electrotest-standalone_0.0.1_amd64.changes ...
+E: electrotest-standalone: changelog-is-dh_make-template
+E: electrotest-standalone source: malformed-debian-changelog-version 0.0.1 (for non-native)
+E: electrotest-standalone: section-is-dh_make-template
+W: electrotest-standalone source: bad-homepage <insert the upstream URL, if relevant>
+W: electrotest-standalone: bad-homepage <insert the upstream URL, if relevant>
+W: electrotest-standalone: binary-without-manpage usr/bin/electrotest-standalone
+W: electrotest-standalone: copyright-has-url-from-dh_make-boilerplate
+W: electrotest-standalone: copyright-without-copyright-notice
+W: electrotest-standalone source: file-without-copyright-information debian/README.Debian
+W: electrotest-standalone source: file-without-copyright-information debian/changelog
+W: electrotest-standalone source: file-without-copyright-information debian/compat
+W: electrotest-standalone source: file-without-copyright-information debian/control
+W: electrotest-standalone source: file-without-copyright-information debian/copyright
+W: electrotest-standalone source: file-without-copyright-information debian/patches/patch_number_one
+W: electrotest-standalone source: file-without-copyright-information debian/patches/series
+W: electrotest-standalone source: file-without-copyright-information debian/rules
+W: electrotest-standalone source: file-without-copyright-information debian/source/format
+W: electrotest-standalone source: file-without-copyright-information debian/watch
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/HEAD
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/config
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/description
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/applypatch-msg.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/commit-msg.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/fsmonitor-watchman.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/post-update.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-applypatch.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-commit.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-merge-commit.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-push.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-rebase.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/pre-receive.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/prepare-commit-msg.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/hooks/update.sample
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.git/info/exclude
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.quilt_patches
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.quilt_series
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/.version
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/applied-patches
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one/Makefile
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/.pc/patch_number_one/src/electrotest-standalone.c
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/Makefile
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/README.Debian
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/changelog
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/compat
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/control
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/copyright
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/patches/patch_number_one
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/patches/series
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/rules
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/source/format
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/source/local-options
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/debian/watch
+W: electrotest-standalone source: file-without-copyright-information oscar/Documents/uppgift9_oscar_janze/main/electrotest-standalone_0.0.1/src/electrotest-standalone.c
+W: electrotest-standalone source: missing-license-paragraph-in-dep5-copyright __no_copyright_nor_license__ (paragraph at line 7)
+W: electrotest-standalone: readme-debian-contains-debmake-template
+W: electrotest-standalone source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: electrotest-standalone: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: electrotest-standalone: wrong-bug-number-in-closes l3:#nnnn
+Finished running lintian.

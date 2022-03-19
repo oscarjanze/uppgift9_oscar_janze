@@ -1,0 +1,13 @@
+Package: electrotest-standalone-dbgsym
+Package-Type: ddeb
+Source: electrotest-standalone
+Version: 0.0.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: oscar <jaanze@gmail.com>
+Installed-Size: 21
+Depends: electrotest-standalone (= 0.0.1)
+Section: debug
+Priority: optional
+Description: debug symbols for electrotest-standalone
+Build-Ids: 04105a2025e69906f20020a0caa87bd60e5c4685

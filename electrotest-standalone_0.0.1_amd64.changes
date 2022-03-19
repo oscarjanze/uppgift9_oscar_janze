@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Sat, 19 Mar 2022 01:04:21 +0100
+Source: electrotest-standalone
+Binary: electrotest-standalone
+Architecture: source amd64
+Version: 0.0.1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: oscar <jaanze@gmail.com>
+Changed-By: oscar <jaanze@gmail.com>
+Description:
+ electrotest-standalone - Standalone version of electrotest
+Changes:
+ electrotest-standalone (0.0.1) UNRELEASED; urgency=low
+ .
+   * Initial release. Closes: #nnnn
+     <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ c9cc3095796eb80cd9be5a4543b5ab9c2f811d68 938 electrotest-standalone_0.0.1.dsc
+ 445b5637a8d3bb8c3ac9438fd64595a1f9acb05e 12207 electrotest-standalone_0.0.1.orig.tar.gz
+ 2d540bc872fe75af722f26f33cba5d6a99f82b3e 3084 electrotest-standalone_0.0.1.debian.tar.xz
+ 7b2dda380b2986c3d86794e0ec81a2bfee6b634b 7160 electrotest-standalone-dbgsym_0.0.1_amd64.ddeb
+ bc1d22ea6d6700c2c1df16913e4babc1a65684ba 6438 electrotest-standalone_0.0.1_amd64.buildinfo
+ bc0b0b08cc536289e5a6314f9a6d463a1b031387 4556 electrotest-standalone_0.0.1_amd64.deb
+Checksums-Sha256:
+ caa20287735ac257f118c66d6b95174b76be3a3572b5e13b2b27fb3bf164ec94 938 electrotest-standalone_0.0.1.dsc
+ 7771bbf459edf07c3a4153fb0a676b5a79b2354fbcec708df770b840e4762106 12207 electrotest-standalone_0.0.1.orig.tar.gz
+ bb6d9fac355488c5aead28ca493d56640f5590f669315a4c683f388867df4fc7 3084 electrotest-standalone_0.0.1.debian.tar.xz
+ db6b3dd1f5d9d3414dcd336fe35d0aadafa4e1b16f749bfa6864c9ff853835b3 7160 electrotest-standalone-dbgsym_0.0.1_amd64.ddeb
+ f057864e6714b93062e31027c53499a8fe0cca3f834af35f6017ec87a2bd9217 6438 electrotest-standalone_0.0.1_amd64.buildinfo
+ e4d24597ab1ed2a58ee49983104899d82efdd78bf0c90687759e05df136550fb 4556 electrotest-standalone_0.0.1_amd64.deb
+Files:
+ 08d150e64a093f005fff70453c72d5c2 938 unknown optional electrotest-standalone_0.0.1.dsc
+ 113df6c8bd7cd1664e3add08a8e037f8 12207 unknown optional electrotest-standalone_0.0.1.orig.tar.gz
+ fb9cdee095d6204e9393cd178e14fd21 3084 unknown optional electrotest-standalone_0.0.1.debian.tar.xz
+ aec3340e2a6c7cc97483c7ff903b08dc 7160 debug optional electrotest-standalone-dbgsym_0.0.1_amd64.ddeb
+ 192d2c52c0250257bc081271114a57e0 6438 unknown optional electrotest-standalone_0.0.1_amd64.buildinfo
+ a96323376b3122d1670af4332bca22ab 4556 unknown optional electrotest-standalone_0.0.1_amd64.deb

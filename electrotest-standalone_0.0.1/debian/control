@@ -1,0 +1,14 @@
+Source: electrotest-standalone
+Section: unknown
+Priority: optional
+Maintainer: oscar <jaanze@gmail.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: <insert the upstream URL, if relevant>
+
+Package: electrotest-standalone
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Standalone version of electrotest
+ Downscaled variant of electrotest from LinUM-VT22
